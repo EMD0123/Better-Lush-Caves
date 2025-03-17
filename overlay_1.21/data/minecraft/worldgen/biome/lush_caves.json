@@ -12,17 +12,12 @@
       "block_search_extent": 8,
       "offset": 2
     },
-    "music": [
-      {
-        "data": {
-          "max_delay": 24000,
-          "min_delay": 12000,
-          "replace_current_music": false,
-          "sound": "minecraft:music.overworld.lush_caves"
-        },
-        "weight": 1
-      }
-    ],
+    "music": {
+      "sound": "minecraft:music.overworld.lush_caves",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    },
     "particle": {
       "options": {
         "type": "minecraft:spore_blossom_air"
@@ -118,11 +113,13 @@
     "misc": []
   },
   "spawn_costs": {},
-  "carvers": [
-    "minecraft:cave",
-    "minecraft:cave_extra_underground",
-    "minecraft:canyon"
-  ],
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
   "features": [
     [],
     [
